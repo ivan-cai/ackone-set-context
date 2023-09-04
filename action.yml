@@ -1,0 +1,22 @@
+name: 'Setting context for Kubernetes cluster of Alibaba Distributed Cloud Container Platform for Kubernetes (ACK One)'
+description: 'Setting context for Kubernetes cluster of Alibaba Distributed Cloud Container Platform for Kubernetes (ACK One)'
+inputs: 
+  access-key-id:
+    description: 'Access key id for Alibaba Cloud'
+    required: true
+  access-key-secret:
+    description: 'Access key secret for Alibaba Cloud'
+    required: true
+  security-token:
+    description: 'STS token for Alibaba Cloud'
+    default: ''
+    required: false
+  cluster-id:
+    description: 'ackone cluster id'
+    required: true
+branding:
+  color: 'orange'
+  icon: 'compass'
+runs:
+  using: 'node16'
+  main: 'dist/index.js'
